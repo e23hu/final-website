@@ -5,20 +5,32 @@
     <meta charset="utc-8">
     <title>GBDA 228 Personal Website: "Handmade by Hu"</title>
     <!-- Created by Emily Hu on Thursday April 3rd -->
-    <!-- embed google fonts here --->
     
+    <!-- Google Fonts Start --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Hi+Melody&display=swap" rel="stylesheet">
+    <!-- Google Fonts End--->
     
-    <!-- End of Google Fonts embed--->
     <style>
-      #header,
-      .courses,
-      #footer,
-      #sidebar,
-      #nav,
-      .article,
+      #header,   
+      #footer,    
+      #navbar,
       figure,
       figcaption {
         display: block;
+      }
+      
+      .cherry-bomb-one-regular {
+      font-family: "Cherry Bomb One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      }
+      
+      .hi-melody-regular {
+      font-family: "Hi Melody", sans-serif;
+      font-weight: 400;
+      font-style: normal;
       }
 
       body {
@@ -26,7 +38,6 @@
         background-color: #f9f8f6;
         background-image: url("https://i.imgur.com/px0ic4P.jpg");
         background-position: center;
-        font-family: "Roboto", Times, serif;
         line-height: 1.4em;
         margin: 0px;
       }
@@ -39,7 +50,7 @@
       }
 
       #header {
-        height: 160px;
+        height: 180px;
         color: #F28482;
         background-color: #F7EDE2;
         font-size: 80%;
@@ -47,10 +58,13 @@
       }
 
       h1 {
-        text-indent: -9999px;
+        padding-top: 50px;
         width: 940px;
-        height: 130px;
+        height: 50px;
         margin: 0px;
+        font-size: 72px;
+        font-family: "Cherry Bomb One"
+  
       }
 
       #footer {
@@ -62,51 +76,15 @@
         padding: 7px 0px 0px 20px;
       }
 
-      .courses {
-        float: left;
-        width: 690px;
-        border-right: 1px solid #eeeeee;
-
-      }
-
-      .article {
-        clear: both;
-        overflow: auto;
-        width: 100%;
-    
-      }
-
-      .hgroup {
-        margin-top: 40px;
-      }
-
-      figure {
-        float: left;
-        width: 290px;
-        height: 220px;
-        padding: 5px;
-        margin: 20px;
-        border: 1px solid #eeeeee;
-      }
-
-      figcaption {
-        font-size: 90%;
-        text-align: left;
-        font-weight: 300;
-        font-style: normal;
-      }
-
-      #sidebar {
-        float: right;
-        width: 220px;
-        padding-left: 20px;
-      }
       
       h2 {
         margin: 10px 0px 5px 0px;
         padding: 0px;
         font-weight: 700;
-        font-style: normal;
+        font-family: "Hi Melody";
+        font-size: 72;
+        color: #84A59D;
+        
       }
 
       h3 {
@@ -116,32 +94,30 @@
         font-style: normal;
       }
 
-      #sidebar h2 {
-        padding: 30px 0px 10px 0px;
-      }
-      
       ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 10;
       }
       
-      #nav {
-        background-color: gray;
+      #navbar {
+        background-color: #F5CAC3;
         padding: 10px;
         height: 15px;
       }
       
+      
       li {
         display: inline;
-        margin: 20px;
-        margin-right: 10px;
+        margin: 75px;
+        text-align: center;
       }
       
       a {
-      color: white;
+      color: #84A59D;
       text-decoration: none;
-      font-size: 20px;
+      font-family: "Cherry Bomb One";
+      font-size: 150%;
       }
       
       a:hover{
@@ -156,15 +132,17 @@
     <div class="wrapper">
       <div id="header">
         <h1>Handmade by Hu</h1>
-        <div id="nav">
+        <h2>
+          for YOU!
+        </h2>
+        <div id="navbar">
+         
          <ul>
            <li><a href="/">Home</a></li>
            <li><a href="/">Classes</a></li>
            <li><a href="/">Catering</a></li>
            <li><a href="">About</a></li>
           </ul> 
-          
-<!-- Instructions: Add a list using the <ul> element and the <li> element to create a link for each menu item. Set the href value to empty. Normally you would put the relative path of page you are linking to, but we are creating a placeholder.-->
           
         </div>
       </div>
@@ -194,13 +172,7 @@
           <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
         </div>
       </div>
-      
-      <div id="sidebar">
-        
-        <div class="contact-details">
-          
-        </div>
-      </div>
+  
       
       <div id="footer">
         &copy; 2024 Yoko's Kitchen
